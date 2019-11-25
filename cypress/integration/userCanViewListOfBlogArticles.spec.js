@@ -1,4 +1,13 @@
 describe('User can view a list of blog articles', () => {
+  beforeEach(() => {
+    cy.server()
+    cy.route({
+      method: 'GET',
+      url: 'http://localhost:3000/v1/blogs',
+      response: 'fixture:blogs.json'
+    })
+    cy.visit('http://localhost:3001')
+  })
 
   it('contains blog content', () => {
     cy.get('[name="blog-1"]').within(() => {

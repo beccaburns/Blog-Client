@@ -1,0 +1,17 @@
+{
+  "blogs":
+  [
+    {
+      "id":1,
+      "title": "Trip to France",
+      "date": "25-11-2019",
+      "author": "Becca"
+    },
+    {
+      "id":2,
+      "title": "Best Fika Spot",
+      "date": "27-11-2019",
+      "author": "Becca"
+    }
+  ]
+}
